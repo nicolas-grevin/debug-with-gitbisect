@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nicolas-grevin/debug-with-gitbisect/issues"
   },
-  "homepage": "https://github.com/nicolas-grevin/debug-with-gitbisect#readme"
+  "homepage": "https://github.com/nicolas-grevin/debug-with-gitbisect#readme",
+  "devDependencies": {
+    "ava": "^3.13.0"
+  }
 }
