@@ -1,0 +1,19 @@
+{
+  "name": "debug-with-gitbisect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolas-grevin/debug-with-gitbisect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolas-grevin/debug-with-gitbisect/issues"
+  },
+  "homepage": "https://github.com/nicolas-grevin/debug-with-gitbisect#readme"
+}
