@@ -1,5 +1,5 @@
 const test = require('ava');
-const hello = require('../src/hello');
+const hello = require('../../src/hello');
 
 test('Say hello en', t => {
     t.is(hello.en(), 'Hello');
