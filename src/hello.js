@@ -9,3 +9,8 @@ exports.fr = () => {
 exports.es = () => {
     return 'Hola';
 }
+
+
+exports.de = () => {
+    return 'Hallo';
+}
