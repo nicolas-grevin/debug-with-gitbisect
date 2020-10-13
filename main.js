@@ -1,5 +1,5 @@
 const process = require('process');
-const hello = require('./src/hello');
+const hello = require('./src/sayHello');
 
 main = (args) => {
     switch (args[0]) {
