@@ -13,9 +13,10 @@ main = (args) => {
             process.stdout.write(hello.es() + '\n');
             break
         case 'en':
-        default:
             process.stdout.write(hello.en() + '\n');
             break;
+        default:
+            throw 'Language is not supported'
     }
 }
 
