@@ -9,6 +9,9 @@ main = (args) => {
         case 'de':
             process.stdout.write(hello.de() + '\n');
             break
+        case 'es':
+            process.stdout.write(hello.es() + '\n');
+            break
         case 'en':
         default:
             process.stdout.write(hello.en() + '\n');
