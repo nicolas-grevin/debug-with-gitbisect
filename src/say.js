@@ -17,6 +17,6 @@ exports.hello = ({ lang }) => {
         case IT:
             return 'Ciao';
         default:
-            throw new Error('Language is not supported. 🦄');
+            throw new Error('Language is not supported.');
     }
 }
