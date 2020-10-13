@@ -1,18 +1,26 @@
 const test = require('ava');
-const hello = require('../../src/hello');
+const say = require('../../src/say');
 
 test('Say hello en', t => {
-    t.is(hello.en(), 'Hello');
+    t.is(say.hello({ lang: 'en' }), 'Hello');
 })
 
 test('Say hello fr', t => {
-    t.is(hello.fr(), 'Salut');
+    t.is(say.hello({ lang: 'fr' }), 'Hello');
 })
 
 test('Say hello es', t => {
-    t.is(hello.es(), 'Hola');
+    t.is(say.hello({ lang: 'es' }), 'Hola');
 })
 
 test('Say hello de', t => {
-    t.is(hello.es(), 'Hallo');
+    t.is(say.hello({ lang: 'de' }), 'Hallo');
+})
+
+test('Say language is not supported', t => {
+    const error = t.throws(() => {
+        say.hello({ lang: 'it' });
+    }, { instanceOf: Error });
+
+    t.is(error.message, 'Language is not supported. 🦄')
 })
