@@ -17,9 +17,13 @@ test('Say hello de', t => {
     t.is(say.hello({ lang: 'de' }), 'Hallo');
 })
 
+test('Say hello it', t => {
+    t.is(say.hello({ lang: 'it' }), 'Ciao');
+})
+
 test('Say language is not supported', t => {
     const error = t.throws(() => {
-        say.hello({ lang: 'it' });
+        say.hello({ lang: 'pl' });
     }, { instanceOf: Error });
 
     t.is(error.message, 'Language is not supported. 🦄')
