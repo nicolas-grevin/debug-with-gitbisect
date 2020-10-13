@@ -8,3 +8,7 @@ test('Say hello en', t => {
 test('Say hello fr', t => {
     t.is(hello.fr(), 'Salut');
 })
+
+test('Say hello es', t => {
+    t.is(hello.es(), 'Hola');
+})

@@ -5,3 +5,7 @@ exports.en = () => {
 exports.fr = () => {
     return 'Salut';
 }
+
+exports.es = () => {
+    return 'Hola';
+}
