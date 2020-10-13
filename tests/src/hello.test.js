@@ -21,6 +21,10 @@ test('Say hello it', t => {
     t.is(say.hello({ lang: 'it' }), 'Ciao');
 })
 
+test('Say hello al', t => {
+    t.is(say.hello({ lang: 'al' }), '👽 👋');
+})
+
 test('Say language is not supported', t => {
     const error = t.throws(() => {
         say.hello({ lang: 'pl' });

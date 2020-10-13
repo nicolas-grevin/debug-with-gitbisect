@@ -3,6 +3,7 @@ const FR = 'fr';
 const ES = 'es';
 const DE = 'de';
 const IT = 'it';
+const AL = 'al';
 
 exports.hello = ({ lang }) => {
     switch (lang) {
@@ -16,6 +17,8 @@ exports.hello = ({ lang }) => {
             return 'Hallo'
         case IT:
             return 'Ciao';
+        case AL:
+            return '👽 👋';
         default:
             throw new Error('Language is not supported.');
     }
