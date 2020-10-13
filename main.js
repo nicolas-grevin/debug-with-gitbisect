@@ -1,22 +1,15 @@
 const process = require('process');
-const hello = require('./src/sayHello');
+const say = require('./src/say');
 
 main = (args) => {
-    switch (args[0]) {
-        case 'fr':
-            process.stdout.write(hello.fr() + '\n');
-            break
-        case 'de':
-            process.stdout.write(hello.de() + '\n');
-            break
-        case 'es':
-            process.stdout.write(hello.es() + '\n');
-            break
-        case 'en':
-            process.stdout.write(hello.en() + '\n');
-            break;
-        default:
-            throw 'Language is not supported'
+    try {
+        process.stdout.write(say.hello({ lang: args[0] }) + '\n');
+
+        return  0;
+    } catch (e) {
+        process.stdout.write(e + '\n');
+
+        return 1;
     }
 }
 
